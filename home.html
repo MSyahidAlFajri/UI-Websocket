@@ -27,6 +27,7 @@
     <meta name="twitter:image" content="http://tailwindcomponents.com/storage/799/temp75559.png?v=2023-02-20 06:33:35" />
     
     <link href="https://unpkg.com/tailwindcss@0.3.0/dist/tailwind.min.css" rel="stylesheet">
+    
 </head>
 <body class="bg-grey-lighter min-h-screen flex flex-col" style="background-image: url(2.jpg); background-size: 100px;"></body>
 <div class="min-h-screen flex flex-col">
@@ -34,7 +35,7 @@
         <div class="bg-green px-6 py-8 rounded shadow-md text-black w-full">
     <h1 class="mb-8 text-3xl text-center">Chat Yoooo</h1>
     <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
-    <div id="messages" class="bg-white px-6 py-8 rounded shadow-md text-black w-full"></div><br>
+    <div id="messages" class="bg-white px-6 py-8 scrool shadow-md text-black w-full"></div><br>
     <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" id="username" placeholder="Username" />
     <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" id="message" placeholder="Message" />
     <button id="send" class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1">Send</button>
@@ -44,7 +45,7 @@
 
     <script>
         $(function() {
-            var socket = new WebSocket("wss://wsrepo-new.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
+            var socket = new WebSocket("wss://ws-new1-723cde489905.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
 
             socket.onmessage = function(event) {
                 var message = JSON.parse(event.data);
