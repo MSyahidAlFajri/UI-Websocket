@@ -3,13 +3,44 @@
 <head>
     <title>WebSocket Chat</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
+    <meta name="msapplication-TileColor" content="#0ed3cf">
+    <meta name="theme-color" content="#0ed3cf">
+
+    <meta property="og:image" content="http://tailwindcomponents.com/storage/799/temp75559.png?v=2023-02-20 06:33:35" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="og:url" content="https://tailwindcomponents.com/component/sign-up-form/landing" />
+    <meta property="og:title" content="Sign Up Form by shubhamjainco" />
+    <meta property="og:description" content="A Sign Up Form for Tailwind CCSS" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TwComponents" />
+    <meta name="twitter:title" content="Sign Up Form by shubhamjainco" />
+    <meta name="twitter:description" content="A Sign Up Form for Tailwind CCSS" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/799/temp75559.png?v=2023-02-20 06:33:35" />
+    
+    <link href="https://unpkg.com/tailwindcss@0.3.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>WebSocket Chat</h1>
-    <div id="messages"></div>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="text" id="message" placeholder="Message" />
-    <button id="send">Send</button>
+<body class="bg-gray-200"></body>
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+    <h1 class="mb-8 text-3xl text-center">WebSocket Chat</h1><br>
+    <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+    <div id="messages" class="bg-white px-6 py-8 rounded shadow-md text-black w-full"></div>
+    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" id="username" placeholder="Username" />
+    <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" id="message" placeholder="Message" />
+    <button id="send" class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1">Send</button>
+</div>
+    </div>
+        </div>
 
     <script>
         $(function() {
